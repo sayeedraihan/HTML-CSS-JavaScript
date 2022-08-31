@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Input Places</title>
+</head>
+<body>
+    <h1>Add a new Tourist Place</h1>
+    <div class="wrapper">
+        <form id='inputform' action="output.html" method="get">
+            <label class="label" for="name">Name:</label>
+            <input class="input" type="text" id="name" name="name" value=""><br>
+            <label class="label" for="address">Address:</label>
+            <input class="input" type="text" id="address" name="address" value=""><br>
+            <label class="label" for="rating">Rating:</label>
+            <input class="input" type="number" id="rating" name="rating" max="5" min="1">
+            <div id="rating_desc">Range 1 to 5</div><br>
+            <label class="label type" for="type">Type:</label>
+            <input class="input type" type="text" id="type" name="type" value="">
+            <div id="type_desc" class="type">Beach<br>Hills<br>Fountain<br>Landmark</div><br>
+            <label class="label picture" for="picture">Picture:</label>
+            <input class="input picture" type="file" id="picture" name="picture" value=""><br>
+            <div class="buttons">
+                <input type="submit" id="submit" name="submit" value="Submit">
+                <input type="reset" id="reset" name="reset" value="Reset"><br>
+            </div>
+        </form>
+    </div>
+    <a href="output.html" id="go-to-output">Back to Tourist Place List</a>
+    <button id="newbtn">Click Me!!</button>
+    <script src="input.js"></script>
+</body>
+</html>
